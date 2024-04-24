@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.product-containor {
+    width: 600px;
+    display: flex;
+}
+
+
+
+.left {
+    background-image: url(./images/image-product-desktop.jpg);
+    height: 450px;
+    width: 50%;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+}
+
+.right {
+    background-color: hsl(0, 0%, 100%);
+    height: 450px;
+    width: 50%;
+    padding-left: 25px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
+
+
+h4 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    letter-spacing: 6px;
+    font-size: 12px;
+    padding: 30px 0 20px;
+    color: hsl(228, 12%, 48%);
+}
+
+
+h1 {
+    font-family: Fraunces, sans-serif;
+    font-weight: 800;
+    line-height: 1.9rem;
+    margin-bottom: 25px;
+}
+
+
+p {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: hsl(228, 12%, 48%);
+    padding-right: 3rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5rem;
+}
+
+
+.new-price {
+    font-family: Fraunces, sans-serif;
+    font-weight: 750;
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+    margin-right: 18px;
+}
+
+
+
+.old-price {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: hsl(228, 12%, 48%);
+}
+
+
+.purchase-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 5.5rem;
+}
+
+
+button {
+    width: 90%;
+    border: 0;
+    margin-right: 22px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+}
+
+
+.purchase-button img {
+    margin-right: 10px;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        min-height: 0;
+    }
+    .product-containor {
+      flex-direction: column;
+      height: 740px;
+    }
+    .right {
+      height: 100%;
+      width: 97%;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      padding-left: 10px;
+    }
+    button {
+      width: 70%;
+      margin-top: 50px;
+    }
+    p {
+        padding-bottom: 10px;
+    }
+    .left {
+      background-image: url("./images/image-product-mobile.jpg");
+      background-position: center;
+      background-size: cover;
+      border-bottom-left-radius: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+  
+      width: 100%;
+      height: 300px;
+    }
+
+    .prices {
+        margin-bottom: 10px;
+        margin-left: 7px;
+    }
+  
+    br {
+      display: none;
+    }
+    .new-price {
+      margin-bottom: 10px;
+    }
+  }
